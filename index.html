@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="layout.css">
+        <title>여행 가이드맵</title>
+    </head>
+    <body>
+      <script src="./function.js"></script>
+      <div class="header">
+        <div class="FSTheader">
+        <a style="padding-left: 20px;" href="index.html">
+            <img src="images/homeicon.png" width="50px" height="50px">
+        </a>
+       <div class="LOGO">WELCOME KOREA</div> 
+      </div>
+        <ul class="headerUL">
+           <li>실시간 서울날씨
+             <div id="temperature"></div>
+           </li>
+        <li>
+           <a href="./Calculate.html">경비 계산</a>
+        </li>
+        <li>
+          <button class="magnify-button" onclick="togglePopup()">검색</button>
+       </li>
+        </ul>
+      </div>
+      <hr/>
+
+      <div class="popup-container" id="popupContainer">
+        <div class="popup-content">
+          <input type="text" placeholder="입력하시오..." id="textInput"><button style="font-size: 12px;" onclick="ButtonClicked()">검색</button></input>
+          <button style="background-color: white; border: none; float: right;" onclick="togglePopup()">X</button>
+        </div>
+      </div>
+      
+    </div>
+      <div class="body">
+        <img class="map" src="images/koreamap.png">
+        <ul class="headerUL">
+            <li><a href="./SeoulPage.html">서울</a></li>
+            <li><a>경/인(미완)</a></li>
+            <li><a>강원도(미완)</a></li>
+            <li><a>경상도(미완)</a></li>
+            <li><a>충청도(미완)</a></li>
+            <li><a>전라도(미완)</a></li>
+            <li><a>제주도(미완)</a></li>
+
+        </ul>
+
+
+
+      </div>
+     
+       
+
+
+
+    </body>
+</html>
