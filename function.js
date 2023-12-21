@@ -9,6 +9,9 @@ function getWeather(){
     .then((data)=>{
     document.getElementById("temperature").innerHTML = data['temperature'];
     })
+     .catch((error) => {
+      document.getElementById("temperature").innerHTML = 'API 호출 실패: ' + error.message;
+  });
 }
 
 getWeather();
